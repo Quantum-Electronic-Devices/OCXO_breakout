@@ -1,0 +1,198 @@
+(footprint "Oscillator_OCXO_kvg_O.30.810742-LF"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "https://kvg-gmbh.de/wp-content/uploads/O30810742-LF_ED3.pdf")
+	(tags "OCXO")
+	(property "Reference" "REF**"
+		(at 0 -15 0)
+		(layer "F.SilkS")
+		(uuid "48cced60-3400-4061-96eb-ad1bc3a1d6a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Oscillator_OCXO_kvg_O.30.810742-LF"
+		(at 0 15.5 0)
+		(layer "F.Fab")
+		(uuid "a174ced3-9853-451b-afbb-674f6d65ad37")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f85716bf-d1bd-4635-8f8d-e81e1f9b52e1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3f3d3de-a9c6-4939-8ee2-837b7a8d975a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -18.17 -13.72)
+		(end 18.17 13.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "1674245e-61e5-4767-8e6b-271506607beb")
+	)
+	(fp_rect
+		(start -18.55 -14.1)
+		(end 18.55 14.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "599d699d-2ebe-4819-95ed-dab7c7b4f0e7")
+	)
+	(fp_circle
+		(center -8.89 -7.62)
+		(end -7.89 -7.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "df96748c-5c96-47dc-be83-46b6c121349c")
+	)
+	(fp_circle
+		(center -8.89 7.62)
+		(end -7.89 7.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "69a294d9-6ee6-4d6f-981c-3e6c52768c3e")
+	)
+	(fp_circle
+		(center 8.89 -7.62)
+		(end 9.89 -7.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ba3a869e-4b1c-41f5-b06c-39ae93774eaf")
+	)
+	(fp_circle
+		(center 8.89 7.62)
+		(end 9.89 7.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8d8a8cbc-6b3a-4c49-afbd-6cb6777df8b0")
+	)
+	(fp_poly
+		(pts
+			(xy -18.05 -12.6) (xy -17.05 -13.6) (xy 18.05 -13.6) (xy 18.05 13.6) (xy -18.05 13.6)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6ce10e36-83ae-422e-8bb5-d859f2a720a7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "c807b186-2492-4e27-83ad-9239a7a8734b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -12.7 -8.9)
+		(size 1.8 1.8)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3e1492dc-047e-4d01-a8a9-62a9a322ad6d")
+	)
+	(pad "2" thru_hole circle
+		(at -12.7 0 270)
+		(size 1.78 1.78)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6aa555af-a412-480b-9715-952afdc4a48a")
+	)
+	(pad "3" thru_hole circle
+		(at -12.7 8.9 270)
+		(size 1.8 1.8)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7723607a-3907-436a-ba6f-7c7f44dcf52a")
+	)
+	(pad "4" thru_hole circle
+		(at 12.7 8.9 270)
+		(size 1.8 1.8)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "055b48e8-085f-4470-8b6a-064b9642d490")
+	)
+	(pad "5" thru_hole circle
+		(at 12.7 -8.9 270)
+		(size 1.8 1.8)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "37eecc14-f2dc-4a5d-83c9-cddffc500bfe")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Oscillator.3dshapes/Oscillator_OCXO_Morion_MV317.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
