@@ -613,7 +613,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Quantum Electronic Devices"
+			(property "Description" "Copyright Quantum Electronic Devices"
 				(at 6.604 -1.524 0)
 				(effects
 					(font
@@ -3133,7 +3133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Custom:QED-logo"
+		(property "Footprint" "Custom_footprints_project:QED-logo"
 			(at 269.24 168.91 0)
 			(effects
 				(font
@@ -3151,7 +3151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quantum Electronic Devices"
+		(property "Description" "Copyright Quantum Electronic Devices"
 			(at 282.194 170.434 0)
 			(effects
 				(font
@@ -3188,6 +3188,15 @@
 			)
 		)
 		(property "Temperature" ""
+			(at 275.59 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 275.59 168.91 0)
 			(effects
 				(font
@@ -3966,7 +3975,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Custom:PhoenixContact_MC_0,5_2-G-2.5_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Custom_footprints_project:PhoenixContact_MC_0,5_2-G-2.5_1x02_P2.50mm_Horizontal"
 			(at 34.29 82.55 0)
 			(effects
 				(font
@@ -4156,7 +4165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Custom_footprints_project:SMA_Amphenol_901-143_Horizontal"
 			(at 190.5 113.03 0)
 			(effects
 				(font
@@ -4392,7 +4401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Custom:Oscillator_OCXO_kvg_O.30.810742-LF"
+		(property "Footprint" "Custom_footprints_project:Oscillator_OCXO_kvg_O.30.810742-LF"
 			(at 153.67 121.92 0)
 			(effects
 				(font
@@ -4447,6 +4456,15 @@
 			)
 		)
 		(property "Temperature" "Tstorage = -40 °C to 85 °C; Top = -40 °C to 70 °C"
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" "-PCBA"
 			(at 153.67 113.03 0)
 			(effects
 				(font

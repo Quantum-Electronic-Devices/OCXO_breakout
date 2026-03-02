@@ -3,6 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
+	(descr "Copyright Quantum Electronic Devices GmbH")
 	(property "Reference" "REF**"
 		(at 0 -3.4 0)
 		(unlocked yes)
@@ -55,7 +56,7 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr smd exclude_from_pos_files exclude_from_bom)
 	(fp_line
 		(start 8 0)
 		(end -1.3 0)
