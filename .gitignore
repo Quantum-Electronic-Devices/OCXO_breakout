@@ -1,46 +1,30 @@
-# Adapted from:
-# https://github.com/github/gitignore/blob/master/KiCad.gitignore
-
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
-# Format documentation: http://kicad-pcb.org/help/file-formats/
-
-# Temporary files
-*.000
-*.bak
-*.bck
-*.kicad_pcb-bak
-*.kicad_sch-bak
-*.kicad_prl
-*.sch-bak
-*~
-_autosave-*
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.~*
 *.tmp
-*-save.pro
-*-save.kicad_pcb
-fp-info-cache
-/build
-*-backups
-*.lck
 
-# Netlist files (exported from Eeschema)
-*.net
-
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
-
-# Footprint association file (exported from Pcbnew)
-*.cmp
-
-# Exported BOM files
+# KiCAD Files #
+###############
+*.kicad_pcb-bak
+*.sch-bak
+*.bak
 *.xml
-*.csv
-*.tsv
+_autosave-*
+*-cache.lib
+*.lck
+fp-info-cache
+footprints_project_specific.3dshapes
 
-# Misc
-*.log
-*.raw
-.svg2shenzhen-cache
+# KiCAD 6 Files #
+*-backups
+*.kicad_prl
 
 # KiCAD 7 Files #
 \#auto_saved_files#
@@ -48,5 +32,6 @@ fp-info-cache
 # Automatically generated files #
 #################################
 gerber/*
+gerber_files/*
 /*.csv
 /*.xlsx
