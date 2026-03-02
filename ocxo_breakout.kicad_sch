@@ -613,7 +613,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Quantum Electronic Devices"
+			(property "Description" "Copyright Quantum Electronic Devices"
 				(at 6.604 -1.524 0)
 				(effects
 					(font
@@ -3151,7 +3151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quantum Electronic Devices"
+		(property "Description" "Copyright Quantum Electronic Devices"
 			(at 282.194 170.434 0)
 			(effects
 				(font
@@ -3188,6 +3188,15 @@
 			)
 		)
 		(property "Temperature" ""
+			(at 275.59 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 275.59 168.91 0)
 			(effects
 				(font
