@@ -4455,6 +4455,15 @@
 				(hide yes)
 			)
 		)
+		(property "Config" "-PCBA"
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "cbc24fd8-b147-4200-b2ba-c6c2c34210df")
 		)
