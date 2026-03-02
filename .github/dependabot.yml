@@ -10,7 +10,3 @@ updates:
       # Prefix all commit messages with "[gha] "
       prefix: "[gha] "
 
-  - package-ecosystem: "gitsubmodule"
-    directory: "/"
-    schedule:
-      interval: "weekly"
