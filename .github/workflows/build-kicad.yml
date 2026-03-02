@@ -196,7 +196,7 @@ jobs:
         variant: ${{ fromJSON(inputs.variants) }}
     steps:
       - name: Download manufacturing files artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           path: ${{ inputs.name }}-manufacturing_files
           pattern: ${{ inputs.name }}-manufacturing_files-*
