@@ -29,9 +29,11 @@ jobs:
             schematic: ocxo_breakout.kicad_sch
             pcb: ocxo_breakout.kicad_pcb
             config: config.kibot.yaml
+            variants: "[ 'default', 'PCBA' ]"
     uses: ./.github/workflows/build-kicad.yml
     with:
       schematic: ${{ matrix.project.schematic }}
       pcb: ${{ matrix.project.pcb }}
       config: ${{ matrix.project.config }}
       name: ${{ matrix.project.name }}
+      variants: ${{ matrix.project.variants }}
