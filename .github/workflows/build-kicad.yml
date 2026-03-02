@@ -24,6 +24,8 @@ jobs:
   tests:
     name: Run tests
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       revision: ${{ steps.extract_sch_revision.outputs.value }}
       basename: ${{ steps.repo-basename.outputs.value }}
@@ -50,6 +52,12 @@ jobs:
           echo "value=$(perl -0777 -ne "print /\(title_block.+\(rev \"(.+?)\"\)/sg" ${{ inputs.pcb }})" >>${GITHUB_OUTPUT}
         shell: bash
 
+      - name: Extract PCB revision label
+        id: extract_pcb_revision_label
+        run: |
+          echo "value=$(perl -0777 -ne "print /\(gr_text \".+\\\nVersion: (.+?)\\\n/g" ${{ inputs.pcb }})" >>${GITHUB_OUTPUT}
+        shell: bash
+
       - name: Test if the revision number was extracted
         if: steps.extract_sch_revision.outputs.value == ''
         run: |
@@ -64,16 +72,25 @@ jobs:
           exit 1
         shell: bash
 
-      - name: Test for correct git tag
-        if: github.ref_type == 'tag' && github.ref_name !=  steps.extract_sch_revision.outputs.value
+      - name: Test revision label == pcb revision
+        if: steps.extract_pcb_revision_label.outputs.value != steps.extract_pcb_revision.outputs.value
         run: |
-          echo "::error::Revision number of the schematic/PCB (${{ steps.extract_sch_revision.outputs.value }}) does not match the Github tag (${{ github.ref_name }})."
+          echo "::error::Revision number of the PCB label (${{ steps.extract_pcb_revision_label.outputs.value }}) does not match PCB (${{ steps.extract_pcb_revision.outputs.value }}) revision."
+          exit 1
+        shell: bash
+
+      - name: Test for correct git tag
+        if: github.event.action == 'published' && github.event.release.tag_name !=  steps.extract_pcb_revision.outputs.value
+        run: |
+          echo "::error::Revision number of the schematic/PCB (${{ steps.extract_pcb_revision.outputs.value }}) does not match the Github tag (${{ github.event.release.tag_name }})."
           exit 1
         shell: bash
 
   ERC:
     name: Run ERC
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     needs: tests
 
     steps:
@@ -101,6 +118,8 @@ jobs:
     name: Run DRC
     runs-on: ubuntu-latest
     needs: tests
+    permissions:
+      contents: read
 
     steps:
       - name: Download repository
@@ -127,6 +146,8 @@ jobs:
     name: 'Produce fabrication outputs'
     runs-on: ubuntu-latest
     needs: [ERC, DRC]
+    permissions:
+      contents: read
     strategy:
       matrix:
         variant: ${{ fromJSON(inputs.variants) }}
@@ -167,6 +188,8 @@ jobs:
     name: 'Upload manufacturing files to release'
     runs-on: ubuntu-latest
     needs: [tests, fabrication_output]
+    permissions:
+      contents: write
     if: github.event.action == 'published'
     strategy:
       matrix:
