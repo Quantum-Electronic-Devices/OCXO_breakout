@@ -1719,7 +1719,7 @@
 	)
 	(text "5V"
 		(exclude_from_sim no)
-		(at 131.826 110.744 0)
+		(at 130.556 109.474 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1951,6 +1951,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 111.76) (xy 123.19 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "544b968b-8a4f-4ccd-b46c-b2d6e008bb6e")
+	)
+	(wire
+		(pts
 			(xy 134.62 110.49) (xy 134.62 111.76)
 		)
 		(stroke
@@ -1988,6 +1998,16 @@
 			(type default)
 		)
 		(uuid "6376197f-19f6-4647-ae55-4a4eb9760431")
+	)
+	(wire
+		(pts
+			(xy 123.19 119.38) (xy 123.19 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8812e5b5-07c8-406d-99b7-5d3f6db2bbe3")
 	)
 	(wire
 		(pts
@@ -2198,6 +2218,16 @@
 			(type default)
 		)
 		(uuid "f42a95d1-d904-4e7a-9d32-d8dfc00e8a43")
+	)
+	(wire
+		(pts
+			(xy 123.19 110.49) (xy 134.62 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1ab105-50e0-49cf-9681-60621116f9d8")
 	)
 	(wire
 		(pts
@@ -3638,6 +3668,112 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 123.19 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "835d5288-b5e6-4965-989c-f9319363f963")
+		(property "Reference" "C1"
+			(at 127 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 127 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 124.1552 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "Kemet"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PN" "C0603C104K5RACAUTO"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "RoHS" "Yes"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature" "Top = –55 °C to 125 °C"
+			(at 123.19 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "843c8290-be48-474d-96f3-c4336843b59e")
+		)
+		(pin "1"
+			(uuid "841180c2-02d3-44bd-ae9c-d99807f7a377")
+		)
+		(instances
+			(project ""
+				(path "/b550b6dd-f44b-4072-aec4-12b3a5ef6ae2"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Graphic:SYM_Arrow_Tiny")
 		(at 281.94 180.34 0)
 		(unit 1)
@@ -4093,6 +4229,72 @@
 			(project ""
 				(path "/b550b6dd-f44b-4072-aec4-12b3a5ef6ae2"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb0eb9de-737b-4bf2-b073-e2228532a04a")
+		(property "Reference" "#PWR013"
+			(at 123.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc295853-833b-4c9b-8d59-016856861eb7")
+		)
+		(instances
+			(project "ocxo_breakout"
+				(path "/b550b6dd-f44b-4072-aec4-12b3a5ef6ae2"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
