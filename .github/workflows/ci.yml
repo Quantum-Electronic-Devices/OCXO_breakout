@@ -27,7 +27,7 @@ jobs:
     strategy:
       matrix:
         project:
-          - name: KVG O.30.810742-LF breakout
+          - name: kvg_O.30.810742-LF_breakout
             schematic: ocxo_breakout.kicad_sch
             pcb: ocxo_breakout.kicad_pcb
             config: config.kibot.yaml
