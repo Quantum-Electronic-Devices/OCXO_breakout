@@ -30,7 +30,7 @@ variants:
   - name: 'PCBA'
     comment: 'The PCBA excluding the housing cables.'
     type: kibom
-    file_id: _(default)
+    file_id: _(PCBA)
     variant: PCBA
 
 outputs:
