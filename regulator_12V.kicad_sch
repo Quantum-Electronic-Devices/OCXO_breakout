@@ -1424,6 +1424,15 @@
 				(hide yes)
 			)
 		)
+		(property "Alternative" "Analog Devices LT3045IDD#TRPBF"
+			(at 142.24 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90d6f53a-f807-4bc1-b788-a0ea49fa3004")
 		)
