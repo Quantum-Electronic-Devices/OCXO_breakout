@@ -3319,15 +3319,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 275.59 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project ""
 				(path "/b550b6dd-f44b-4072-aec4-12b3a5ef6ae2"
@@ -3485,7 +3476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature" ""
+		(property "Temperature" "Top = –55 °C to 155 °C"
 			(at 134.62 115.57 0)
 			(effects
 				(font
@@ -3666,7 +3657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature" ""
+		(property "Temperature" "Top = –55 °C to 155 °C"
 			(at 134.62 105.41 0)
 			(effects
 				(font
@@ -3782,15 +3773,6 @@
 			)
 		)
 		(property "Temperature" ""
-			(at 278.13 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 278.13 160.02 0)
 			(effects
 				(font
